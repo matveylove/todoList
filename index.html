@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <img src="./img/84492.png" alt="">
+      </a>
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button class="btn btn-dark btn-authorization btn-registration">Регистрация</button>
+          <button class="btn btn-dark btn-authorization btn-entry">Вход</button>
+      </div>
+    </header>
+
+    <div class="container d-flex justify-content-center flex-column align-items-center">
+      <h1>ToDoList</h1>
+      <div class="todo">
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Введите задачу" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Добавить</button>
+              </div>
+            </div>
+            <ul class="list-group">
+              
+            </ul>
+        </div>
+    </div>
+  </div>
+
+    <!-- FORM-ENTRY -->
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3 form-entry">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card" style="border-radius: 15px;">
+                <button type="button" class="btn-close btn-entry-close" aria-label="Close"></button>
+                <div class="card-body p-5">
+                  <h2 class="text-uppercase text-center mb-5">Log in to your account</h2>
+    
+                  <form>
+    
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example3cg">Your Email</label>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example4cg">Password</label>
+                    </div>
+    
+                    <div class="d-flex justify-content-center">
+                      <button type="button"
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
+                    </div>
+    
+                  </form>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- FORM-REGISTRATION -->
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3 form-registration">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card" style="border-radius: 15px;">
+                <button type="button" class="btn-close btn-registration-close" aria-label="Close"></button>
+                <div class="card-body p-5">
+                  <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+    
+                  <form>
+    
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example1cg">Your Name</label>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example3cg">Your Email</label>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example4cg">Password</label>
+                    </div>
+    
+                    <div class="form-outline mb-4">
+                      <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                      <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                    </div>
+    
+                    <div class="d-flex justify-content-center">
+                      <button type="button"
+                        class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                    </div>
+    
+                  </form>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="src/script.js"></script>
+    <script src="./src/form.js"></script>
+</body>
+</html>
